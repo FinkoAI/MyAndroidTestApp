@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <EditText   android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rusTranscriptTextId"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <Button     android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_translate"
+                android:id="@+id/translateButtonId"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <Button
+            android:id="@+id/btnCopyToClipboardId"
+            android:text="@string/button_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/engTranscriptTextId"
+            android:text="@string/hello_world"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:textColor="#404040"
+            android:layout_toLeftOf="@id/btnCopyToClipboardId"
+            android:textSize="20sp"
+            android:ellipsize="end" />
+
+    </RelativeLayout>
+
+</LinearLayout>
